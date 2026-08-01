@@ -1,4 +1,4 @@
-#The Museum of Broken Builds
+## The Museum of Broken Builds
 
 A playful interactive museum celebrating human tech struggles, burnout, lost patience, email graveyards, and lost focus.
 
