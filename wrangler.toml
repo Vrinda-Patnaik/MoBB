@@ -1,0 +1,6 @@
+name = "museumos"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+[vars]
+# Environment variables like GEMINI_API_KEY can be set in the Cloudflare Pages dashboard.

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-handwritten: 'Architects Daughter', cursive;
+    --font-marker: 'Caveat', cursive;
+    --font-mono: 'Fira Code', monospace;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-handwritten {
+  font-family: var(--font-handwritten);
+}
+
+.font-marker {
+  font-family: var(--font-marker);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Sketchbook & Paper Background Patterns */
+.bg-sketchbook-light {
+  background-color: #e5e4df;
+  background-image: 
+    radial-gradient(#b8b5aa 0.75px, transparent 0.75px),
+    linear-gradient(to right, rgba(184, 181, 170, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 100%;
+}
+
+.bg-sketchbook-dark {
+  background-color: #101114;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 100%;
+}
+
+/* Museum Glows & Shadow Effects from Reference */
+.museum-glow-amber {
+  box-shadow: 0 0 30px -5px rgba(255, 157, 0, 0.35);
+}
+
+.museum-glow-red {
+  box-shadow: 0 0 30px -5px rgba(220, 38, 38, 0.35);
+}
+
+.museum-glow-purple {
+  box-shadow: 0 0 30px -5px rgba(126, 34, 206, 0.35);
+}
+
+.museum-card-shadow {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+/* Masking Tape effect */
+.masking-tape {
+  background: rgba(245, 240, 222, 0.88);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  border-left: 2px dashed rgba(180, 165, 130, 0.6);
+  border-right: 2px dashed rgba(180, 165, 130, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.masking-tape-dark {
+  background: rgba(50, 48, 42, 0.88);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  border-left: 2px dashed rgba(120, 110, 90, 0.6);
+  border-right: 2px dashed rgba(120, 110, 90, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+/* Wiggle Keyframe Animation */
+@keyframes doodleWiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-2deg) scale(1.02); }
+  75% { transform: rotate(2deg) scale(0.98); }
+}
+
+.hover-wiggle:hover {
+  animation: doodleWiggle 0.4s ease-in-out infinite alternate;
+}
+
+.animate-wiggle-slow {
+  animation: doodleWiggle 3s ease-in-out infinite alternate;
+}
+
+/* Custom Pencil Cursor */
+.custom-pencil-cursor, .custom-pencil-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>') 2 22, auto !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 115, 105, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 115, 105, 0.5);
+}

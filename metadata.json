@@ -1,0 +1,8 @@
+{
+  "name": "The Museum of Broken Builds",
+  "description": "The Museum of Broken Builds – An interactive emotional bug tracking museum where procrastination, burnout, and overthinking are preserved as software artifacts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
